@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	font: 16px 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+section{
+	width: 45%;
+	margin: 10px auto;
+	box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+h2{
+	color: #32b9be;
+	margin-bottom: 20px;
+}
+
+.card-superior{
+	padding: 30px;
+}
+
+.card-superior h3{
+	color: #ffab03;
+	margin-bottom: 10px;
+}
+
+.card-superior p{
+	color: #7a8370;
+}
+
+.cards-inferior{
+	display: flex;
+	flex-flow: row nowrap;
+	color: #fff;
+}
+
+.cards-inferior .card{
+	width: 50%;
+	padding: 30px;
+}
+
+.cards-inferior .card-left{
+	background: #32b9be;
+	border-bottom-left-radius: 10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+.cards-inferior .card-left span{
+	font-size: 2em;
+	color: #fff;
+}
+
+.cards-inferior .card-left p.price{
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.cards-inferior .card-left a{
+	color: #fff;
+	font-weight: 900;
+	background: #ffab03;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 5px;
+}
+
+.cards-inferior .card-left a:hover{
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cards-inferior .card-right{
+	background: #5bcebf;
+	border-bottom-right-radius: 10px;
+}
+
+.cards-inferior .card-right h3{
+	margin-bottom: 10px;
+}
+
+.cards-inferior .card-right ul{
+	font-size: 0.9em;
+	line-height: 20px;
+}
+
+.cards-inferior .card-right a:link, a:visited, a:active{
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.cards-inferior .card-right a:hover{
+	color: rgba(255, 255, 255, 1.0);
+}
+
+/*Media query-----------------------------------------------------
+1024|768|480|320 */
+@media (max-width: 1024px){
+	section{
+		width: 70%;
+	}
+}
+
+@media (max-width: 768px){
+	section{
+		width: 90%;
+	}
+
+	.cards-inferior{
+		text-align: center;
+		display: flex;
+		flex-flow: column; nowrap;
+	}
+
+	.cards-inferior .card{
+		width: 100%;
+	}
+
+	.cards-inferior .card-left{
+		border-radius: 0;
+	}
+
+	.cards-inferior .card-right{
+		border-radius: 0 0 10px 10px;
+	}
+}
+
+@media (max-width: 320px){
+	body{
+		font-size: 0.9em;
+	}
+}
